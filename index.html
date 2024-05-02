@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-enquiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website With Login and Registration | Codehal</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        
+        <header>
+            <h2 class="logo">Logo</h2>
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <button class="btnLogin-popup">Login</button>
+                <button class="btnAccount" style="display: none;">Account</button>
+                    <div class="account-menu">
+                        <a href="#" class="logout-link">Logout</a>
+                    </div>
+            </nav>
+        </header>
+        
+        <div class="wrapper">
+            <span class="icon-close">
+                <ion-icon name="close">
+            </ion-icon>
+            </span>
+            
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person"></ion-icon>
+                        </span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">I agree to the terms & conditions</label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="loggedin">
+            <span class="icon-close">
+            <ion-icon name="close">
+            </ion-icon>
+            </span>
+            <div class="form-box loggedin-content">
+                <h2>Logged in</h2>
+                <p>You are now logged in.</p>
+            </div>
+        </div>
+
+        <div class="logout">
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box logout-content">
+                <h2>Logged out</h2>
+                <p>You have been logged out.</p>
+            </div>
+        </div>
+        
+        <div class="registration-message">
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box registration-content">
+                <h2>Registered</h2>
+                <p>You have been registered successfully.</p>
+            </div>
+        </div>
+        
+        <div class="error-message">
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box error-content">
+                <h2>Error</h2>
+                <p>Please fill in all fields and agree to the terms.</p>
+            </div>
+        </div>
+        
+        <div class="error-login-message">
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box error-login-content">
+                <h2>Error</h2>
+                <p>Invalid email or password.</p>
+            </div>
+        </div>
+        
+        <div class="chat-widget">
+            <button class="open-chat-btn">open Chat</button>
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h3>Chat</h3>
+                    <span class="icon-close">
+                        <ion-icon name="close"></ion-icon></span>
+                </div>
+                <div class="chat-messages">
+                    <!-- Hier werden die Chatnachrichten angezeigt -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Nachricht eingeben...">
+                    <button class="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
